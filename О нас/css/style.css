@@ -1,7 +1,7 @@
 
 
 body{
-	
+	font-family: Tahoma ;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -15,6 +15,7 @@ body{
 	align-content: center;
 	background: rgba(0,0,0,.5);
 	display: flex;
+	
 	vertical-align: middle;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
@@ -69,13 +70,40 @@ body{
 	border-radius: 50%;
 	margin-bottom: 10px;
 }
-h2{
-	text-align: center;
+h2.texth2{
+	text-align: right;
 	font-size: 40px;
 }
+h1{
+	text-align: center;
+	font-size: 120px;
+}
 .sort1{
-	min-height: 2000px;
+	min-height: 1000px;
 }
 .sort2{
 	min-height: 2000px;
 }
+
+TD.leftcol {
+    width: 110px; /* Ширина левой колонки с рисунком */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+   }
+
+img.First {
+	float: left;
+	margin-right: 80px;
+	margin-left: 40px;
+  }
+
+  p.text1 {
+	float: right;
+	text-align: right;
+  }
+
+  li {
+	float: left;
+	margin: 2px;
+	display: inline;
+	vertical-align: top;
+  }
