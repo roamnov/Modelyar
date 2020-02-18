@@ -76,7 +76,7 @@ h2.texth2{
 }
 h1{
 	text-align: center;
-	font-size: 120px;
+	font-size: 60px;
 }
 .sort1{
 	min-height: 1000px;
@@ -85,10 +85,9 @@ h1{
 	min-height: 2000px;
 }
 
-TD.leftcol {
-    width: 110px; /* Ширина левой колонки с рисунком */
-    vertical-align: top; /* Выравнивание по верхнему краю */
-   }
+div.miss{
+	min-height: 100px;
+}
 
 img.First {
 	float: left;
@@ -96,14 +95,25 @@ img.First {
 	margin-left: 40px;
   }
 
+  img.Second {
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+  }
+
   p.text1 {
 	float: right;
 	text-align: right;
   }
 
-  li {
+  li:nth-child(2) {
 	float: left;
-	margin: 2px;
+	margin: 5px;
 	display: inline;
 	vertical-align: top;
   }
+
+div.one{
+	width: 100%;
+	height: 400px;
+}
