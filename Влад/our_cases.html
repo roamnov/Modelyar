@@ -4,53 +4,124 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
+  <meta name="description" content="">
 	<title>ModelYar</title>
 	<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"  href="css/lightslider.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script> 
+    <script>
+       $(document).ready(function() {
+            $('#image-gallery1').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:8,
+                slideMargin: 2,
+                speed:500,
+                auto:false,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery1').removeClass('cS-hidden');
+                }  
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:8,
+                slideMargin: 2,
+                speed:500,
+                auto:false,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+    });
+    </script>
 </head>
 <body style="background-image: url(img/bg_our_cases.jpg);">
   <header class="header">
     <div class="container">
     <div class="logo"><img src="img/logo.png" alt="логотип"></div>
     <div class="menu"><ul>
-      <li><a href="#">ГЛАВНАЯ</a></li>
-      <li><a href="#" style="text-decoration: none; color: #0565FF; text-shadow: 0 0 0  #0565FF;">НАШИ РАБОТЫ</a></li>
-      <li><a href="#">О НАС</a></li>
-      <li><a href="#">КОНТАКТЫ</a></li>
+      <li><a href="index.html">ГЛАВНАЯ</a></li>
+      <li><a href="our_cases.html" style="color: #0565FF; text-shadow: 0 0 0  #0565FF;">НАШИ РАБОТЫ</a></li>
+      <li><a href="about_us.html">О НАС</a></li>
+      <li><a href="contacts.html">КОНТАКТЫ</a></li>
     </ul></div></div>
   </header>
   <main class="main">
     <div class="container">
-      <div class="controls">
-        <a href="#sort1"><div class="control1"></div></a>
-        <a href="#sort2"><div class="control2"></div></a>
-      </div>
-      <div class="sort1">
-        <a name="sort1"></a><h2>Корабли</h2>
-        <div class="items_of_sheep">
-          <div class="item">
-            <div class="galerey"></div>
-            <div class="text"></div>
+      <div class="items">
+        <div class="item">
+          <div class="item_img">
+            <div class="img">
+              <img src="img/k1.jpg" alt="">
+            </div>
           </div>
-          
+          <div class="text"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+          </div>
         </div>
-      </div> 
-      <div class="sort2">
-        <a name="sort2"><h2>Прочее</h2>
-      </div> 
-    </div>
+      <div class="item">
+          <div class="item_img">
+            <div class="img">
+              <img src="img/k2.jpg" alt="">
+            </div>
+          </div>
+          <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </div>
+        </div>
+      <div class="item">
+          <div class="item_img">
+            <div class="img">
+              <img src="img/k3.jpg" alt="">
+            </div>
+          </div>
+          <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </div>
+        </div>
+      <div class="item">
+          <div class="item_img">
+            <div class="img">
+              <img src="img/k4.jpg" alt="">
+            </div>
+          </div>
+          <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </div>
+        </div>
+      <div class="item">
+          <div class="item_img">
+            <div class="img">
+              <img src="img/k5.jpg" alt="">
+            </div>
+          </div>
+          <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </div>
+        </div>
+      <div class="item">
+          <div class="item_img">
+            <div class="img">
+              <img src="img/k6.jpg" alt="">
+            </div>
+          </div>
+          <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </div>
+        </div>
+      </div>
+    </div> 
   </main>
 <footer class="footer">
     <div class="container">
       <div class="logo">
-        <img src="img/logo_footer.png" alt="логотип">
+        <img src="img/logo.png" alt="логотип">
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#">ГЛАВНАЯ</a></li>
-          <li><a href="#">НАШИ РАБОТЫ</a></li>
-          <li><a href="#">О НАС</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
+          <li><a href="index.html">ГЛАВНАЯ</a></li>
+          <li><a href="our_cases.html">НАШИ РАБОТЫ</a></li>
+          <li><a href="about_us.html">О НАС</a></li>
+          <li><a href="contacts.html">КОНТАКТЫ</a></li>
         </ul>
       </div>
       <div class="contacts">
@@ -60,17 +131,15 @@
           <img src="img/instagram.svg" alt="instagram">
           <img src="img/whatsapp.svg" alt="whatsapp">
         </div>
-        <div class="phone" tel="+79051330399">
-          +7(905) 133-03-99
+       <div class="phone cont" tel="+79051330399">
+          <img src="img/phone_footer.svg" alt="телефон">+7(915) 969-17-05 
         </div>
-        <div class="mail">
-          modelyar@mail.com
+        <div class="mail cont">
+          <img src="img/mail_footer.svg" alt="почта">MODELYAR76@mail.ru
         </div>
       </div>
     </div>
 </footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
-	<script src="js/main.js"></script>
 	<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

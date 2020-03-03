@@ -1,41 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
-	<title>ModelYar</title>
-	<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content ="width-device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script src="js/slick/slick.js"></script>
+	<link rel = "stylesheet" href ="js/slick/slick-theme.css">
+	<link rel = "stylesheet" href ="js/slick/slick.css">
+	<link rel = "stylesheet" href ="css/bootstrap.css">
+	<link rel = "stylesheet" href ="css/bootstrap-grid.css">
+	<link rel = "stylesheet" href ="css/style.css">
+	<title>SLIDER</title>
+	<style>
+		
+	</style>
 </head>
 <body>
-	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="img/karusel/k1.jpg" alt="Здание">
+
+<div class="topHeader">
+	
+	<header class="header">
+    <div class="container">
+    	<div class="logo"><img src="img/logo.png" alt="логотип"></div>
+	    <div class="menu">
+	    	<ul>
+		      <li><a href="index.html" style="text-decoration: none; color: #0565FF; text-shadow: 0 0 0  #0565FF;">ГЛАВНАЯ</a></li>
+		      <li><a href="our_cases.html">НАШИ РАБОТЫ</a></li>
+		      <li><a href="about_us.html">О НАС</a></li>
+		      <li><a href="contacts.html">КОНТАКТЫ</a></li>
+	    	</ul>
+		</div>
+	</div>
+  	</header>
+	<div class="slider mainSlider">
+		<div class="slide slide-1">Более 30 лет работы</div>
+		<div class="slide slide-2">Современные материалы</div>
+		<div class="slide slide-3">Передовые технологии</div>
+		<div class="slide slide-4">Качественно и в срок</div>
+		<div class="slide slide-5">Мы любим свое дело</div>
+		<div class="slide slide-6">Мы любим свое дело</div>
+	</div>
+
+	<footer class="footer footer1" >
+    <div class="container">
+      <div class="main_text">
+      Изготовление макетов</br>
+      <div>кораболей <span>&#9679</span> техники <span>&#9679</span> зданий</div>
+             </div>
+      <div class="contacts">
+        <div class="soc">
+          <img src="img/vk.svg" alt="vk">
+          <img src="img/facebook.svg" alt="facebook">
+          <img src="img/instagram.svg" alt="instagram">
+          <img src="img/whatsapp.svg" alt="whatsapp">
+        </div>
+        <div class="phone cont" tel="+79051330399">
+          <img src="img/phone_footer.svg" alt="телефон">+7(915) 969-17-05 
+        </div>
+        <div class="mail cont">
+          <img src="img/mail_footer.svg" alt="почта">MODELYAR76@mail.ru
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/karusel/k2.jpg" alt="Корабль">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/karusel/k3.jpg" alt="Здание">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/karusel/k4.jpg" alt="Корабль">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/karusel/k5.jpg" alt="Корабль">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/karusel/k6.jpg" alt="Корабль">
-    </div>
-  </div>
+	</footer>
 </div>
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
-	<script src="js/main.js"></script>
-	<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script>
+	$(document).ready(function() {
+		if($('.mainSlider').length){
+			$('.topHeader').addClass('hasSlider');
+			$('.mainSlider').slick({
+				dots: false,
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+ 				autoplaySpeed: 3000,
+ 				infinite: true,
+  				speed: 1000,
+ 				fade: true,
+  				cssEase: 'linear'
+			})
+		}
+	})	
+</script>
+ <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
