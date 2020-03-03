@@ -16,10 +16,7 @@
     	<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="логотип"></div>
 	    <div class="menu">
 	    	<ul>
-		      <li><a href="index.html" style="text-decoration: none; color: #0565FF; text-shadow: 0 0 0  #0565FF;">ГЛАВНАЯ</a></li>
-		      <li><a href="our_cases.html">НАШИ РАБОТЫ</a></li>
-		      <li><a href="about_us.html">О НАС</a></li>
-		      <li><a href="contacts.html">КОНТАКТЫ</a></li>
+		      <?php wp_nav_menu(); ?>
 	    	</ul>
 		</div>
 	</div>

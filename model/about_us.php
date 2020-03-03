@@ -1,5 +1,5 @@
 <?php /* Template Name: CustomPageT1 */ ?>
-<?php get_header(); ?>
+<?php get_header('about'); ?>
   <main class="main">
     <div class="container row">
         <div class="block1_about_us">
@@ -19,33 +19,33 @@
             <div class="block1">
               <div class="block1_1">
                 <a href="http://www.npo-saturn.ru/" target="new">
-              <img src="img/clientele/Saturne.jpg" alt="Сатурн"></a>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/Saturne.jpg" alt="Сатурн"></a>
               </div>
               <div class="block1_2">
                 <a href="http://kb-lutch.ru/" target="new">
-                <img src="img/clientele/luch.jpg" alt="Луч"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/luch.jpg" alt="Луч"></a>
               </div>
               <div class="block1_3">
                 <a href="http://www.hydromec.ru/" target="new">                
-                <img src="img/clientele/gedrmeh.jpg" alt="ГидроМех"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/gedrmeh.jpg" alt="ГидроМех"></a>
                 <a href="http://yarshipyard.ru/" target="new"> 
-                <img src="img/clientele/sudozavot.jpg" alt="Ярославский судостроительный завод"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/sudozavot.jpg" alt="Ярославский судостроительный завод"></a>
               </div>
             </div>
             <div class="block2">
               <div class="block2_1">
                 <a href="https://www.r-kompleks.ru/" target="new"> 
-                <img src="img/clientele/rybinskkomplecs.jpg" alt="РыбинскКомплекс"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/rybinskkomplecs.jpg" alt="РыбинскКомплекс"></a>
                 <a href="https://www.vympel-rybinsk.ru/" target="new"> 
-                <img src="img/clientele/vempel.jpg" alt="Вымпел судостроительный завод"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/vempel.jpg" alt="Вымпел судостроительный завод"></a>
                 <a href="#"> 
-                <img src="img/clientele/kosatka.jpg" alt="Проектно-конструкторское бюро Косатка"></a>            
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/kosatka.jpg" alt="Проектно-конструкторское бюро Косатка"></a>            
               </div>
               <div class="block2_2">
                 <a href="http://www.mssz.ru/" target="new"> 
-                <img src="img/clientele/mssz.jpg" alt="Московский судостроительный завод"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/mssz.jpg" alt="Московский судостроительный завод"></a>
                 <a href="http://oao-raskat.ru/about/" target="new"> 
-                <img src="img/clientele/raskat.jpg" alt="Раскат"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/clientele/raskat.jpg" alt="Раскат"></a>
               </div>
           </div>
         </div>
@@ -53,21 +53,21 @@
       <div class="block3_about_us">
         <div class="photo_soc">
           <div class="photo">
-            <img src="img/Sergei.jpg">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/Sergei.jpg">
           </div>
           <div class="soc">
 
             <a href="#">
-              <img class="Second" src="img/facebook.svg" alt="Facebook"  >
+              <img class="Second" src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="Facebook"  >
             </a>
             <a href="#">
-              <img class="Second" src="img/instagram.svg"alt="Instagram"  >
+              <img class="Second" src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg"alt="Instagram"  >
             </a>
             <a href="#">
-              <img class="Second" src="img/vk.svg" alt="VK" >
+              <img class="Second" src="<?php echo get_template_directory_uri(); ?>/img/vk.svg" alt="VK" >
             </a>
             <a href="#">
-              <img class="Second" src="img/whatsapp.svg"alt="WhatsApp" >
+              <img class="Second" src="<?php echo get_template_directory_uri(); ?>/img/whatsapp.svg"alt="WhatsApp" >
             </a>
           </div>
         </div>
@@ -77,7 +77,7 @@
         </div>
       </div>
   </main>
-<?php get_footer();?>
+<?php get_footer('about'); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 	<script src="js/main.js"></script>
 	<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>

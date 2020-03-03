@@ -44,7 +44,7 @@ if ( ! function_exists( 'model_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'model' ),
+			'menu' => esc_html__( 'Primary', 'model' ),
 		) );
 
 		/*
@@ -119,6 +119,8 @@ add_action( 'widgets_init', 'model_widgets_init' );
 function modelyar_style(){
 	wp_enqueue_style( 'css-style', get_template_directory_uri(). '/css/style.css' );
 
+	wp_enqueue_style( 'bootstrap-4.4.1-dist-style', get_template_directory_uri(). '/bootstrap-4.4.1-dist/css/bootstrap.min.css' );
+
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri(). '/css/bootstrap.css' );
 
 	wp_enqueue_style( 'bootstrap-grid-style', get_template_directory_uri(). '/css/bootstrap-grid.css' );
@@ -132,6 +134,9 @@ function modelyar_style(){
 	wp_enqueue_script( 'slick-script', get_template_directory_uri() . 'https://code.jquery.com/jquery-latest.min.js');
 
 	wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'slick-script', get_template_directory_uri() . 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), true );
+	wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/js/bootstrap-4.4.1-dist/js/bootstrap.js', array(), '20151215', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'modelyar_style' );
@@ -163,5 +168,7 @@ add_action( 'wp_enqueue_scripts', 'model_scripts' );
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
 
 show_admin_bar(false);
