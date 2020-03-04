@@ -25,6 +25,22 @@
     </div>
 </footer>
 <?php wp_footer();?>
+<script>
+       jQuery(function($){
+  $('#slider').nivoSlider({
+    effect: 'random',               // эффекты, например: 'fold, fade, sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft, slideInRight, slideInLeft'
+    animSpeed: 500,                 // скорость анимации
+    pauseTime: 3000,                // пауза между сменой слайдов
+    directionNav: true,             // нужно ли отображать кнопки перехода на следующий и предыдущий слайд
+    controlNav: true,               // 1,2,3... навигация (например в виде точек)
+    pauseOnHover: true,             // останавливать прокрутку слайдов при наведении мыши
+    manualAdvance: false,           // true - отключить автопрокрутку
+    prevText: 'Назад',               // текст перехода на предыдущий слайд
+    nextText: 'Вперед',               // текст кнопки перехода на следующий слайд
+    randomStart: false,             // начинать со случайного слайда
+  });
+});
+    </script>
 </body>
 
 </html>

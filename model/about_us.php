@@ -1,7 +1,7 @@
-<?php /* Template Name: CustomPageT1 */ ?>
+<?php /* Template Name: О нас */ ?>
 <?php get_header('about'); ?>
   <main class="main">
-    <div class="container row">
+    <div class="container">
         <div class="block1_about_us">
           <div class="text">
             <h3>Занимаемся созданием моделей<br>с <span>1995</span> года</h3>
