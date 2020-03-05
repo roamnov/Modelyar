@@ -4,16 +4,15 @@
       <div class="item_page">
         <div class="galery">
           <div class="item">
-            <div class="clearfix">
+            <div class="sliderbody">
                 <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                
                    <?php
 $args = array(
   'post_parent' => $post->ID,
   'post_type' => 'attachment',
   'orderby' => 'menu_order', // сортировка, menu_order - по выставленному в админке порядку, можно также сортировать по имени или дате добавления 
   'order' => 'ASC',
-  'numberposts' => 5, // количество выводимых изображений
+  'numberposts' => 3, // количество выводимых изображений
   'post_mime_type' => 'image'
 );
 if ( $images = get_children( $args ) ) {
@@ -27,13 +26,18 @@ if ( $images = get_children( $args ) ) {
 }
 
                    ?>
-
                 </ul>
             </div>
           </div>
         </div>
         <div class="text">
-           
+           <?php if(have_posts()) {while(have_posts()){ the_post();?>
+
+            <?php the_content(); ?>
+
+
+           <?php }
+     }?>
         </div>
       
       </div>

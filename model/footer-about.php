@@ -24,7 +24,7 @@
       </div>
     </div>
 </footer>
-<?php wp_footer();?>
+
 <script>
        jQuery(function($){
   $('#slider').nivoSlider({
@@ -41,6 +41,6 @@
   });
 });
     </script>
+    <?php wp_footer();?>
 </body>
-
 </html>
